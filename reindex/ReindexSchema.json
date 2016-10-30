@@ -13,7 +13,137 @@
         unique: true
       },
       {
+        name: "facebook",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Dance",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
         name: "name",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Choreography",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "name",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Part",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "name",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Figure",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "name",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Action",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "name",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Note",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "description",
+        type: "String"
+      }
+    ]
+  }, {
+    name: "Timing",
+    kind: "OBJECT",
+    interfaces: [
+      "Node"
+    ],
+    fields: [
+      {
+        name: "id",
+        type: "ID",
+        nonNull: true,
+        unique: true
+      },
+      {
+        name: "bar",
+        type: "Int"
+      },
+      {
+        name: "subbar",
         type: "String"
       }
     ]
