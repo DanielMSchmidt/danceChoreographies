@@ -11,3 +11,45 @@ The backend is realized with `reindex.io`, the schema is in `/reindex/ReindexSch
 ## Frontend
 
 TBD, most likely Relay + React
+
+
+## Schema
+
+Definition at `/reindex/ReindexSchema.json`.
+
+### Queries
+
+#### Query
+
+```
+{
+	viewer {
+    allDances {
+      count,
+      nodes {
+        id
+        name
+      }
+    }
+    allNotes {
+      count
+      nodes {
+				id
+      }
+  	}
+  }
+}
+```
+
+#### Mutation
+
+```
+mutation addDance($dance: _CreateDanceInput!) {
+  createDance(input: $dance) {
+    changedDance {
+      id 
+      name
+    }
+  }
+}
+```
