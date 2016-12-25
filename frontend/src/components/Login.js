@@ -12,23 +12,8 @@ export default class Login extends Component {
       <div>
         <h1>Welcome to Reindex!</h1>
         <div>
-          <button onClick={this.handleLogin.bind(this, 'google')}>
-            Login with Google
-          </button>
-        </div>
-        <div>
           <button onClick={this.handleLogin.bind(this, 'facebook')}>
-            Login with Facebook
-          </button>
-        </div>
-        <div>
-          <button onClick={this.handleLogin.bind(this, 'github')}>
-            Login with Github
-          </button>
-        </div>
-        <div>
-          <button onClick={this.handleLogin.bind(this, 'twitter')}>
-            Login with Twitter
+            Login with FB
           </button>
         </div>
       </div>
